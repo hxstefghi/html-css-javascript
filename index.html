@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header>
+      <div class="mx-auto max-w-3xl py-8">
+        <nav class="flex items-center justify-between">
+          <h1 class="text-2xl font-bold">Logo</h1>
+
+          <div class="space-x-4">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <div class="mx-auto py-6 max-w-3xl">
+        <!-- <p id="demo"></p>
+
+        <div id="main">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            obcaecati?
+          </p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div> -->
+
+        <form action="" id="form1">
+          First name: <input type="text" name="fname" value="Christian" /><br />
+          Last name: <input type="text" name="lname" value="Catuday" /><br />
+          <button type="submit"></button>
+        </form>
+
+        <p id="info">These are the list values in the forms:</p>
+        <button
+          class="py-4 px-2 border border-gray-700 rounded-2xl"
+          onclick="document.getElementById('info').style.color = 'red'"
+        >
+          Click me!
+        </button>
+
+        <p id="demo"></p>
+      </div>
+    </section>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
