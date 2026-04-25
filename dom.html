@@ -34,11 +34,19 @@
           <p>Lorem ipsum dolor sit amet.</p>
         </div> -->
 
-        <form action="" id="form1">
-          First name: <input type="text" name="fname" value="Christian" /><br />
+        <!-- <form action="" id="form1" onsubmit="return validateForm()">
+          First name: <input type="text" name="fname" class="border p-2" /><br />
           Last name: <input type="text" name="lname" value="Catuday" /><br />
-          <button type="submit"></button>
-        </form>
+          <input type="submit"></input>
+        </form> -->
+
+        <!-- <p>Input a number:</p>
+        <input id="number" />
+        <button type="button" onclick="validateNumber()" class="border p-2">
+          Submit
+        </button>
+
+        <p id="display"></p>
 
         <p id="info">These are the list values in the forms:</p>
         <button
@@ -48,10 +56,27 @@
           Click me!
         </button>
 
-        <p id="demo"></p>
+        <p id="demo"></p> -->
+        <button
+          onclick="myMove()"
+          class="p-2 border text-white bg-gray-700 mb-2 rounded-lg"
+        >
+          Click me!
+        </button>
+
+        <button
+          onclick="this.innerHTML = Date()"
+          class="p-2 border text-white bg-red-600"
+        >
+          Click me to change the Date!
+        </button>
+
+        <div class="h-75 w-75 bg-gray-700 relative">
+          <div id="animate" class="h-20 w-20 bg-red-500 absolute"></div>
+        </div>
       </div>
     </section>
 
-    <script src="/script.js"></script>
+    <script src="./dom.js"></script>
   </body>
 </html>
