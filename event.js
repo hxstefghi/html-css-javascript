@@ -1,3 +1,4 @@
+// mouse event
 let date = document.getElementById("date-btn");
 
 date.addEventListener("click", () => {
@@ -24,6 +25,7 @@ addEventListener("mousemove", (event) => {
   pos.innerHTML = "X: " + event.clientX + " Y: " + event.clientY;
 });
 
+// keydown
 let keyDown = document.getElementById("keyDown");
 let keyDownDisplay = document.getElementById("keyDownDisplay");
 
@@ -40,6 +42,7 @@ enterKey.addEventListener("keydown", (event) => {
   }
 });
 
+// clear interval and set interval
 let btnStart = document.getElementById("btnStart");
 let btnStop = document.getElementById("btnStop");
 let btnReset = document.getElementById("btnReset");
@@ -63,4 +66,13 @@ btnReset.addEventListener("click", () => {
 function counter() {
   count++;
   document.getElementById("counterDisplay").innerHTML = count;
+}
+
+// event attribute
+function mOver(obj) {
+  obj.innerHTML = "Thank you po!";
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Happy Birthday Miko Catuday!";
 }
