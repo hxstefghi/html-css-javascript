@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- click listener -->
+    <button id="date-btn">Click this to show the date</button>
+    <p id="display"></p>
+
+    <!-- mouseover and mouseout listener -->
+    <div
+      id="box"
+      style="
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        padding: 10px;
+      "
+    >
+      Move your mouse here!
+    </div>
+
+    <!-- mousemove -->
+    <p id="pos"></p>
+
+    <!-- keydown -->
+    <input type="text" id="keyDown" placeholder="Press any key" />
+    <p id="keyDownDisplay"></p>
+
+    <!-- detect enter -->
+    <input type="text" id="enterKey" placeholder="Press Enter" />
+    <p id="enterDisplay"></p>
+
+    <!-- set interval and clear interval -->
+    <button id="btnStart">Start Counter</button>
+    <button id="btnStop">Stop Counter</button>
+    <button id="btnReset">Reset Counter</button>
+
+    <p id="counterDisplay">0</p>
+
+    <script src="./event.js"></script>
+  </body>
+</html>
