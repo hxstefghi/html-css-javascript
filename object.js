@@ -94,3 +94,13 @@ for (let [x, y] of result.Dark.entries()) {
 }
 
 document.getElementById("displayObject").innerHTML = displayText;
+
+let demo = document.getElementById("demo");
+
+let textD = "";
+// for...in loop
+for (let x in person4) {
+  textD += person[x] + " ";
+}
+
+demo.innerHTML = textD;

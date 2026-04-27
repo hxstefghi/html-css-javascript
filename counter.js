@@ -19,3 +19,20 @@ function reset() {
   counter = 0;
   displayCounter.innerHTML = counter;
 }
+
+let demo = document.getElementById("demo");
+
+const fruits = [
+  {
+    name: "Banana",
+    color: "Yellow",
+  },
+  {
+    name: "Apple",
+    color: "Red",
+  },
+];
+
+for (let [key, value] of Object.entries(fruits)) {
+  demo.innerHTML += `${value.name}: ${value.color}<br>`;
+}
