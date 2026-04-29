@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+  gap: 24px;
+  max-width: 85%;
+}
+
+.items {
+  background: aqua;
+  color: red;
+  width: 100px;
+  height: 100px;
+}
+
+.col {
+  flex: 0 0 calc((100% - 24px) * (1 / 12));
+}
+
+.col-2 {
+  flex: 0 0 calc((100% - 24px) * (2 / 12));
+}
+
+.col-3 {
+  flex: 0 0 calc((100% - 24px) * (3 / 12));
+}
+
+.col-4 {
+  flex: 0 0 calc((100% - 24px) * (4 / 12));
+}
+
+.col-5 {
+  flex: 0 0 calc((100% - 24px) * (5 / 12));
+}
+
+.col-6 {
+  flex: 0 0 calc((100% - 24px) * (6 / 12));
+}
+
+.col-7 {
+  flex: 0 0 calc((100% - 24px) * (7 / 12));
+}
+
+.col-8 {
+  flex: 0 0 calc((100% - 24px) * (8 / 12));
+}
+
+.col-9 {
+  flex: 0 0 calc((100% - 24px) * (9 / 12));
+}
+
+.col-10 {
+  flex: 0 0 calc((100% - 24px) * (10 / 12));
+}
+
+.col-11 {
+  flex: 0 0 calc((100% - 24px) * (11 / 12));
+}
+
+.col-12 {
+  flex: 0 0 calc((100% - 24px) * (12 / 12));
+}

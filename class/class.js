@@ -16,27 +16,21 @@ class Animal {
 
 // inheritance
 class Car {
-  constructor(name, year) {
+  constructor(name, color, year) {
     this.name = name;
+    this.color = color;
     this.year = year;
   }
 
-  carYear(x) {
+  getYear(x) {
     return x - this.year;
   }
 }
 
 class Model extends Car {
-  constructor(name, year, mod) {
-    super(name, year);
+  constructor(name, color, year, mod) {
+    super(name, color, year);
     this.model = mod;
-  }
-
-  carModel() {
-    let date = new Date();
-    return (
-      this.carYear(date.getFullYear()) + " " + this.name + " " + this.model
-    );
   }
 }
 
@@ -45,8 +39,9 @@ let date = new Date();
 Animal.prototype.language = "Filipino";
 
 let maki = new Animal("Cat", "Black and Brown", "9 months");
-let toyota = new Car("Innova", 2012);
+// let toyota = new Car("Innova", 2012);
 
-let honda = new Model("Honda", 2024, "Honda Civic");
+// let honda = new Car("Honda", "black", 2024);
+let honda = new Model("Honda", "red", 2023, "honda civic");
 
-displayText.innerHTML = `${honda.carModel()}`;
+displayText.innerHTML = `Name: ${honda.name} Color: ${honda.color} Year: ${honda.getYear(date.getFullYear())} Model: ${honda.model}`;
