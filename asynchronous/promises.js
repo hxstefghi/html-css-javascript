@@ -25,25 +25,47 @@ function myDisplay(value) {
 // );
 
 // promise steps
-function step1() {
-  return Promise.resolve("Christian");
-}
+// function step1() {
+//   return Promise.resolve("Christian");
+// }
 
-function step2(value) {
-  return Promise.resolve(value + "C.");
-}
+// function step2(value) {
+//   return Promise.resolve(value + "C.");
+// }
 
-function step3(value) {
-  return Promise.resolve(value + "Catuday");
-}
+// function step3(value) {
+//   return Promise.resolve(value + "Catuday");
+// }
 
-step1()
-  .then(function (value) {
-    return step2(value + " ");
-  })
-  .then(function (value) {
-    return step3(value + " ");
-  })
-  .then(function (value) {
-    return (display.innerHTML = value);
-  });
+// step1()
+//   .then(function (value) {
+//     return step2(value + " ");
+//   })
+//   .then(function (value) {
+//     return step3(value + " ");
+//   })
+//   .then(function (value) {
+//     return (display.innerHTML = value);
+//   });
+
+let myPromise = new Promise(function (resolve, reject) {
+  let res = new XMLHttpRequest();
+  res.open("GET", "./callbacks.html");
+  res.onload = function () {
+    if (res.status === 200) {
+      resolve(res.responseText);
+    } else {
+      reject("File not found!");
+    }
+  };
+  res.send();
+});
+
+myPromise.then(
+  function (value) {
+    myDisplay(value);
+  },
+  function (error) {
+    myDisplay(error);
+  },
+);
