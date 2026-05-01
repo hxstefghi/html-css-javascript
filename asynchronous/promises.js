@@ -48,20 +48,31 @@ function myDisplay(value) {
 //     return (display.innerHTML = value);
 //   });
 
-let myPromise = new Promise(function (resolve, reject) {
-  let res = new XMLHttpRequest();
-  res.open("GET", "./callbacks.html");
-  res.onload = function () {
-    if (res.status === 200) {
-      resolve(res.responseText);
-    } else {
-      reject("File not found!");
-    }
-  };
-  res.send();
-});
+// let myPromise = new Promise(function (resolve, reject) {
+//   let res = new XMLHttpRequest();
+//   res.open("GET", "./callbacks.html");
+//   res.onload = function () {
+//     if (res.status === 200) {
+//       resolve(res.responseText);
+//     } else {
+//       reject("File not found!");
+//     }
+//   };
+//   res.send();
+// });
 
-myPromise.then(
+// myPromise.then(
+//   function (value) {
+//     myDisplay(value);
+//   },
+//   function (error) {
+//     myDisplay(error);
+//   },
+// );
+
+let promise = Promise.reject("I love you 143!!");
+
+promise.then(
   function (value) {
     myDisplay(value);
   },
