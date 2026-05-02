@@ -70,13 +70,33 @@ function myDisplay(value) {
 //   },
 // );
 
-let promise = Promise.reject("I love you 143!!");
+// let promise = Promise.reject("I love you 143!!");
 
-promise.then(
-  function (value) {
+// promise.then(
+//   function (value) {
+//     myDisplay(value);
+//   },
+//   function (error) {
+//     myDisplay(error);
+//   },
+// );
+
+let { promise, resolve, reject } = Promise.withResolvers();
+
+let success = Math.random() > 0.5;
+
+setTimeout(function () {
+  if (success) {
+    resolve("Success!");
+  } else {
+    reject("Rejected!");
+  }
+}, 2000);
+
+promise
+  .then(function (value) {
     myDisplay(value);
-  },
-  function (error) {
+  })
+  .catch(function (error) {
     myDisplay(error);
-  },
-);
+  });
