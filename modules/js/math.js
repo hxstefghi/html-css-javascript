@@ -1,4 +1,4 @@
-export function math(a, b) {
+export function add(a, b) {
   return `The result is: ${a + b}`;
 }
 
@@ -27,3 +27,5 @@ export class Person {
     return (display.innerHTML = `Name: ${this.name} Age: ${this.age} Course: ${this.course}`);
   }
 }
+
+export * from "./string.js";
