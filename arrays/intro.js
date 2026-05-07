@@ -11,7 +11,7 @@ let arr2 = [4, 5, 6, 7];
 
 let person = {
   name: "Christian",
-  age: 10,
+  age: 22,
 };
 
 // let num1 = 3;
