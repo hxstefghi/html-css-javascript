@@ -12,4 +12,4 @@ function loadTxt() {
 
 // document.getElementById("display").innerHTML = loadTxt();
 
-let inputTxt = document.getElementById('inputTxt');
+let inputTxt = document.getElementById("inputTxt");
