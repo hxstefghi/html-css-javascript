@@ -1,0 +1,16 @@
+{
+  "user": [
+    {
+      "username": "christian",
+      "name": "Christian Catuday",
+      "age": 22,
+      "color": "Brown"
+    },
+    {
+      "username": "hxstefghi",
+      "name": "Alexis Catuday",
+      "age": 20,
+      "color": "Blue"
+    }
+  ]
+}
