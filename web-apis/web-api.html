@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="display"></p>
+    <button onclick="goBack()">Go back</button>
+
+    <input
+      type="text"
+      name="fname"
+      id="fnameInp"
+      minlength="10"
+      maxlength="100"
+      required
+    />
+    <button onclick="isValid()">Send</button>
+
+    <p id="validDisplay"></p>
+
+    <div>
+      <button onclick="startWorker()">Start Worker</button>
+
+      <p id="workerDisplay"></p>
+    </div>
+
+    <script src="./web-api.js"></script>
+  </body>
+</html>
