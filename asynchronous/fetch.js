@@ -42,3 +42,12 @@ promise2
   .catch(function (error) {
     myDisplay(error);
   });
+
+let xhttp = new XMLHttpRequest();
+
+xhttp.onload = function () {
+  let response = this.responseText;
+  display.innerHTML = response;
+};
+xhttp.open("GET", "../text.txt");
+xhttp.send();
